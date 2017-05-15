@@ -19,6 +19,15 @@ if(!empty($_POST)){
 	 	echo "Votre parametre $mike[2] n'ai pas correct";
 
 	else{
+		/*
+		TERNAIR
+		echo ($mike[1] > $mike[2])?
+		"La puissance est $mike[1]":
+		($mike[2] > $mike[1])?
+		"La puissance est $mike[2]":
+		"equals";
+		*/
+
 		if($mike[1] > $mike[2])
 			echo "la puissance est: ". $mike[1];
 
@@ -26,7 +35,7 @@ if(!empty($_POST)){
 			echo "la puissance est: ". $mike[2];
 
 		else{
-			echo "les deux sont egaux";
+			echo "equals";
 		}
 	}
 
