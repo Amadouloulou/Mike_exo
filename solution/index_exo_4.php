@@ -15,13 +15,13 @@ if(!empty($_POST)){
 	else if(!ctype_digit($mike[1]))
 		echo "Votre parametre $mike[1] n'ai pas correct";
 
-	else{
-			if ($mike[1] % 2)
-				echo "votre nombre est impaire";
+	else if(!ctype_digit($mike[2]))
+	 	echo "Votre parametre $mike[2] n'ai pas correct";
 
-			else
-				echo"Votre nombre est paire";
-		}
+	else{
+
+		echo "resultat :". ($mike[1] + $mike[2]);
+	}
 
 
 }
