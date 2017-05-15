@@ -19,7 +19,8 @@ if(!empty($_POST)){
 	 	echo "Votre parametre $mike[2] n'ai pas correct";
 
 	else{
-		echo "Paramètre 1 : $mike[1]<br/>Parametre 2 : $mike[2]";
+
+		echo "resultat :". ($mike[1] + $mike[2]);
 	}
 
 
